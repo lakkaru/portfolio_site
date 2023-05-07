@@ -13,6 +13,7 @@
     ></script>
   </head>
   <body>
+    <a href="#" id="move-up"><i class="fas fa-arrow-up"></i></a>
     <div id="header">
       <div class="container">
         <nav>
@@ -22,19 +23,26 @@
           </div>
 
           <ul id="sidemenu">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact</a></li>
-            <i class="fa-solid fa-times" style="color:#920b07;" onclick="closemenu()"></i>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#services">Services</a></li> -->
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#participations">Participations</a></li>
+            <li><a href="#memberships">Memberships</a></li>
+            <li><a href="#follow-me">Follow Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              class="fa-solid fa-times"
+              style="color: #920b07"
+              onclick="closemenu()"
+            ></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-          
         </nav>
         <div class="header-text">
           <div>
-            <p>Front-End Developer</p>
+            <!-- <p>Front-End Developer</p> -->
+            <p></p>
             <h1>Hi, I am <span>Lakshman</span> Karunasena</h1>
           </div>
         </div>
@@ -66,18 +74,41 @@
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>UI/UX</span><br />Designing web/app interfaces</li>
+                <li>
+                  <span>React JS</span><br />At present, I am pursuing a course
+                  on React JS.
+                </li>
               </ul>
               <ul>
-                <li><span>UI/UX</span><br />Designing web/app interfaces</li>
+                <li>
+                  <span>JavaScript ES6</span><br />I possess practical expertise
+                  in utilizing object de-structuring, array mapping, and other
+                  related techniques within ES6.
+                </li>
               </ul>
               <ul>
-                <li><span>UI/UX</span><br />Designing web/app interfaces</li>
+                <li>
+                  <span>CSS 3</span><br />I have acquired substantial experience
+                  in CSS and Bootstrap through my self-initiated learning
+                  projects, and I am looking forward to implementing Material UI
+                  with React JS.
+                </li>
+              </ul>
+              <ul>
+                <li><span>HTML5</span><br /></li>
+              </ul>
+              <ul>
+                <li>
+                  <span>PHP</span><br />In my individual project, I employed PHP
+                  and received an 'A-' grade for its successful utilization.
+                </li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
               <ul>
-                <li><span>Free Lancing</span><br />Designing web/app interfaces</li>
+                <li>
+                  <span>Free Lancing</span><br />Designing web/app interfaces
+                </li>
               </ul>
               <!-- <ul>
                 <li><span>UI/UX</span><br />Designing web/app interfaces</li>
@@ -88,7 +119,10 @@
             </div>
             <div class="tab-contents" id="education">
               <ul>
-                <li><span>USCS</span><br />Designing web/app interfaces</li>
+                <li>
+                  <span>USCS</span><br />Bachelor of Information Technology
+                  (2017).
+                </li>
               </ul>
               <!-- <ul>
                 <li><span>UI/UX</span><br />Designing web/app interfaces</li>
@@ -102,7 +136,7 @@
       </div>
     </div>
     <!-- ------ services ----------------- -->
-    <div id="services">
+    <!-- <div id="services">
       <div class="container">
         <h2 class="sub-title">My Services</h2>
         <div class="services-list">
@@ -126,88 +160,256 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- -------- portfolio ----------- -->
     <div id="portfolio">
       <div class="container">
         <h2 class="sub-title">My Works</h2>
-        <div class="work-list">
+        <!-- <div class="work-list"> -->
+        <div class="work-list" id="work-list-1">
           <div class="work">
-            <img src="images/work-1.png" alt="" />
+            <img src="images/mis.png" alt="" />
             <div class="layer">
-              <h3>social nmern ncbn</h3>
-              <p>jdjsfd jbdfjsdbfjsbjf jbjdfbs</p>
-              <a href=""
+              <h3>Individual Project</h3>
+              <p>
+                For the development of this system, I utilized PHP, MySQL, HTML,
+                and Bootstrap in the MVC architecture, which resulted in an 'A-'
+                grade for the project.
+              </p>
+              <a
+                href="https://lakkaru.github.io/MIS-at-Piduruthalagala"
+                target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
           <div class="work">
-            <img src="images/work-2.png" alt="" />
+            <img src="images/mindGame.png" alt="" />
             <div class="layer">
-              <h3>social nmern ncbn</h3>
-              <p>jdjsfd jbdfjsdbfjsbjf jbjdfbs</p>
-              <a href=""
+              <h3>Mind Game</h3>
+              <p>Practicing JavaScript setTimeout() callback function.</p>
+              <a href="https://lakkaru.github.io/js-mind-game" target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
           <div class="work">
-            <img src="images/work-3.png" alt="" />
+            <img src="images/cloneUI.png" alt="" />
             <div class="layer">
-              <h3>social nmern ncbn</h3>
-              <p>jdjsfd jbdfjsdbfjsbjf jbjdfbs</p>
-              <a href=""
+              <h3>React Component Separation</h3>
+              <p>
+                I replicated this UI as a means of practicing React component
+                separation, taking into account the Single Responsibility
+                Principle (SRP).
+              </p>
+              <a
+                href="https://lakkaru.github.io/react-components"
+                target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
           <div class="work">
-            <img src="images/work-4.png" alt="" />
+            <img src="images/blynk.png" alt="" />
             <div class="layer">
-              <h3>social nmern ncbn</h3>
-              <p>jdjsfd jbdfjsdbfjsbjf jbjdfbs</p>
-              <a href=""
+              <h3>Blynk</h3>
+              <p>
+                For the remote monitoring of my off-grid system, I utilize the
+                Blynk app.
+              </p>
+              <!-- <a href=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a> -->
+            </div>
+          </div>
+        </div>
+        <div class="work-list" id="work-list-2">
+          <div class="work">
+            <img src="images/masterCard.png" alt="" />
+            <div class="layer">
+              <h3>Master Card</h3>
+              <p>
+                Practicing CSS pseudo classes, pseudo elements, transform and
+                rotate methods for achieving various visual effects. Hovere over
+                the card to simulate a "flap" effect.
+              </p>
+              <a
+                href="https://lakkaru.github.io/css-flapping-master-card"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/animationCSS.png" alt="" />
+            <div class="layer">
+              <h3>CSS Animation</h3>
+              <p>
+                Another area of my CSS practice includes creating keyframes and
+                infinite animations for dynamic and engaging user interfaces.
+              </p>
+              <a
+                href="https://lakkaru.github.io/Ambient-Light-Effect-css"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/gameUI.png" alt="" />
+            <div class="layer">
+              <h3>React Component Separation</h3>
+              <p>
+                I replicated this UI as a means of practicing React component
+                separation, taking into account the Single Responsibility
+                Principle (SRP).
+              </p>
+              <a
+                href=" https://lakkaru.github.io/react-game-skins-ui-test"
+                target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
             </div>
           </div>
         </div>
-        <a href="" class="btn">See more</a>
+        <!-- </div> -->
+        <button class="btn" id="seeMore" onclick="seeMore()">See more</button>
+      </div>
+    </div>
+    <!-- ----------------------- participations --------------------- -->
+
+    <div id="participations">
+      <div class="container">
+        <h2 class="sub-title">Participations</h2>
+        <div class="participations-list">
+          <div class="epi">
+            <i class="fa-solid fa-code"></i>
+            <h2>epihack</h2>
+            <p>
+              EpiHack is a hackathon with a mission: reduce the risk of
+              epidemics by providing those tracking and responding to disease
+              outbreaks with better tools.
+            </p>
+            <!-- <a href="">Learn more</a> -->
+          </div>
+
+          <div>
+            <i class="fas fa-network-wired"></i>
+            <h2>CISCO Networking Academy</h2>
+            <p>Introduction to Cybersecurity.</p>
+            <!-- <a href="">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-brands fa-google"></i>
+            <h2>Google I/O Extended</h2>
+            <p>2018 / 2019</p>
+            <!-- <a href="">Learn more</a> -->
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- ------------------ contact ----------------------- -->
-    <div id="contact">
+    <!-- ------------------ memberships --------------- -->
+
+    <div id="memberships">
+      <div class="container">
+        <h2 class="sub-title">
+          Memberships <i class="fa-solid fa-people-group"></i>
+        </h2>
+        <div class="memebrship-list">
+          <div>
+            <!-- <h2>CSSL</h2> -->
+            <img src="images/CSSL-Logo.png" alt="" />
+            <p>
+              Since 2016, I have been a member of The Computer Society of Sri
+              Lanka.
+            </p>
+            <!-- <a href="">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------ Follow Me ----------------------- -->
+    <div id="follow-me">
       <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h2 class="sub-title">Contact Me</h2>
-                <p><i class="fa-solid fa-envelope"></i>lakkaru@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>0767531659</p>
-                <div class="social-icons">
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></i></a>
-                    <a href=""><i class="fa-brands fa-medium"></i></i></a>
-                    <a href=""><i class="fa-brands fa-stack-overflow"></i></i></a>
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                </div>
-                <a href="images/cl.pdf" download class="btn btn2">Download CV</a>
+          <div class="contact-left">
+            <h2 class="sub-title">Follow Me</h2>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-medium"></i></a>
+              <a href=""><i class="fa-brands fa-stack-overflow"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
             </div>
-            <div class="contact-right">
+          </div>
+          <!-- <div class="contact-right">
                 <form action="">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-            </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- ------------------ contact ----------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+            <p><i class="fa-solid fa-envelope"></i>lakkaru@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+94 - 0767531659</p>
+            <p><i class="fa-brands fa-square-whatsapp"></i>+94 - 0767531659</p>
+            <!-- <div class="social-icons">
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-medium"></i></a>
+              <a href=""><i class="fa-brands fa-stack-overflow"></i></a>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div> -->
+            <!-- <a href="images/cl.pdf" download class="btn btn2">Download CV</a> -->
+          </div>
+          <!-- <div class="contact-right">
+                <form action="">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div> -->
         </div>
       </div>
       <div class="copyright">
         <p>Copyright @ lakkaru.</p>
       </div>
     </div>
+
+    <!-- ------ up arrow script----- -->
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("move-up").style.display = "block";
+        } else {
+          document.getElementById("move-up").style.display = "none";
+        }
+      }
+
+      document.getElementById("move-up").onclick = function () {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      };
+    </script>
 
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
@@ -224,14 +426,29 @@
       }
     </script>
 
+    <!-- -------- script for seeMore works ---------------- -->
     <script>
-        var sidemenu=document.getElementById('sidemenu');
-        function openmenu(){
-            sidemenu.style.right='0';
+      function seeMore() {
+        var buttonText = document.getElementById("seeMore").innerHTML;
+        var secondDiv= document.getElementById('work-list-2');
+
+        if (buttonText == "See more") {
+         secondDiv.classList.add('show');
+          document.getElementById("seeMore").innerHTML = "See less";
+        } else {
+          secondDiv.classList.remove('show');
+          document.getElementById("seeMore").innerHTML = "See more";
         }
-        function closemenu(){
-            sidemenu.style.right='-200px';
-        }
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
     </script>
   </body>
 </html>
