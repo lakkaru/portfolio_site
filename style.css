@@ -227,13 +227,11 @@ nav ul li a:hover::after{
 }
 
 #work-list-2{
-    /* visibility: hidden; */
     opacity: 0;
     display: none;
     transition: opacity 0.8s ease-in-out;
 }
 #work-list-2.show {
-    
     opacity: 1;
     display: grid;
     transition: opacity 0.8s ease-in-out;
