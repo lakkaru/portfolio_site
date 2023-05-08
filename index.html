@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="portfolio site" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, ReactJS, lakkaru" />
+    <meta name="author" content="Lakshman Karunasena" />
     <title>Lakkaru</title>
 
     <link rel="stylesheet" href="style.css" />
@@ -18,19 +21,19 @@
       <div class="container">
         <nav>
           <div>
-            <img src="images/logo.png" alt="" class="logo" />
+            <img src="images/logo.webp" alt="" class="logo" />
             <span style="color: green">lakkaru</span>
           </div>
 
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about" onclick="closemenu()">About</a></li>
             <!-- <li><a href="#services">Services</a></li> -->
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#participations">Participations</a></li>
-            <li><a href="#memberships">Memberships</a></li>
-            <li><a href="#follow-me">Follow Me</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+            <li><a href="#participations" onclick="closemenu()">Participations</a></li>
+            <li><a href="#memberships" onclick="closemenu()">Memberships</a></li>
+            <li><a href="#follow-me" onclick="closemenu()">Follow Me</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
             <i
               class="fa-solid fa-times"
               style="color: #920b07"
@@ -44,6 +47,15 @@
             <!-- <p>Front-End Developer</p> -->
             <p></p>
             <h1>Hi, I am <span>Lakshman</span> Karunasena</h1>
+            <h3>Front-End Developer</h3>
+            <h6>"Although there may be a plethora of unknowns, 
+              I remain optimistic that with the help of 
+              resources such as Google, YouTube, ChatGPT, 
+              and other support systems as well as peoples, 
+              I can conquer them and emerge as an individual 
+              who has surmounted these challenges."</h6>
+            <!-- <img src='images/background.webp' alt="" id="fullImage"> -->
+            <!-- <img src="images/user.webp" alt="" hidden id="faceImage"/> -->
           </div>
         </div>
       </div>
@@ -53,15 +65,27 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/user.png" alt="" />
+            <img src="images/user.webp" alt="lakkaru-face" />
           </div>
           <div class="about-col-2">
             <h2 class="sub-title">About Me</h2>
-            <p>
-              Although there may be a plethora of unknowns, I remain optimistic
-              that with the help of resources such as Google, YouTube, ChatGPT,
-              and other support systems as well as peoples, I can conquer them
-              and emerge as an individual who has surmounted these challenges.
+            <p>I am a Senior Technical Officer at Sri Lanka Rupavahini 
+              Corporation and been assigned to the main transmitting 
+              station at Mount Piduruthalagala.I completed my BIT in 
+              the year 2017 with A- pass on my individual project by 
+              self-studying. Even though I loved to study in the 
+              computer science field, I just missed the opportunity 
+              to enroll in the USCS with A/L result in 1996. I got 
+              selected for the Industrial Management stream at the 
+              University of Kelaniya. During this period, I learned 
+              Pascal and visual basic languages. I used these languages 
+              for creating small applications for my day-to-day tasks 
+              such as transformer winding calculations. I automated duty 
+              roster generation for Piduruthalagala staff in 2012 and 
+              still in use with a spreadsheet. Also, I practiced and 
+              implemented several prototypes using Arduino, nodeMCU, and 
+              its sensors and modules for the remote operation of 
+              electronic devices.
             </p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
@@ -75,8 +99,8 @@
             <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li>
-                  <span>React JS</span><br />At present, I am pursuing a course
-                  on React JS.
+                  <span>ReactJS</span><br />At present, I am pursuing a course
+                  on ReactJS.
                 </li>
               </ul>
               <ul>
@@ -107,7 +131,14 @@
             <div class="tab-contents" id="experience">
               <ul>
                 <li>
-                  <span>Free Lancing</span><br />Designing web/app interfaces
+                  <span>Self Practicing</span><br />Even though I did not assign
+                   to the IT related job in my current organization, I practiced 
+                   my it skills with w3schools, youtube channels such as Traversy
+                    media, edureka, coder coder, namasthe javascript, tensor 
+                    programming, devmarketer, etc. Most of them are available in
+                     my <a href="https://github.com/lakkaru" target="_blank"> GitHub</a> profile.
+                  I also have published several articles on the 
+                  <a href="https://medium.com/@lakkaru" target="_blank"> Medium</a> platform. 
                 </li>
               </ul>
               <!-- <ul>
@@ -122,6 +153,12 @@
                 <li>
                   <span>USCS</span><br />Bachelor of Information Technology
                   (2017).
+                </li>
+                <li>
+                  <span>ReactJS</span><br />Currently I am following a 
+                  <a href="https://radikadilanka.com/courses/"> ReactJS </a>
+                  course conducted by local instructor Mr. Radika Dilanka 
+                  and in <a href="https://www.udemy.com/user/lakshman-karunasena-2/" target="_blank"> Udemy</a>.
                 </li>
               </ul>
               <!-- <ul>
@@ -164,11 +201,11 @@
     <!-- -------- portfolio ----------- -->
     <div id="portfolio">
       <div class="container">
-        <h2 class="sub-title">My Works</h2>
+        <h2 class="sub-title">My Activities</h2>
         <!-- <div class="work-list"> -->
         <div class="work-list" id="work-list-1">
           <div class="work">
-            <img src="images/mis.png" alt="" />
+            <img src="images/mis.webp" alt="mis" />
             <div class="layer">
               <h3>Individual Project</h3>
               <p>
@@ -184,7 +221,7 @@
             </div>
           </div>
           <div class="work">
-            <img src="images/mindGame.png" alt="" />
+            <img src="images/mindGame.webp" alt="mind-game" />
             <div class="layer">
               <h3>Mind Game</h3>
               <p>Practicing JavaScript setTimeout() callback function.</p>
@@ -194,7 +231,7 @@
             </div>
           </div>
           <div class="work">
-            <img src="images/cloneUI.png" alt="" />
+            <img src="images/cloneUI.webp" alt="cloned UI" />
             <div class="layer">
               <h3>React Component Separation</h3>
               <p>
@@ -210,7 +247,7 @@
             </div>
           </div>
           <div class="work">
-            <img src="images/blynk.png" alt="" />
+            <img src="images/blynk.webp" alt="blynk app" />
             <div class="layer">
               <h3>Blynk</h3>
               <p>
@@ -225,7 +262,7 @@
         </div>
         <div class="work-list" id="work-list-2">
           <div class="work">
-            <img src="images/masterCard.png" alt="" />
+            <img src="images/masterCard.webp" alt="master-card" />
             <div class="layer">
               <h3>Master Card</h3>
               <p>
@@ -241,7 +278,7 @@
             </div>
           </div>
           <div class="work">
-            <img src="images/animationCSS.png" alt="" />
+            <img src="images/animationCSS.webp" alt="animationCSS" />
             <div class="layer">
               <h3>CSS Animation</h3>
               <p>
@@ -256,7 +293,7 @@
             </div>
           </div>
           <div class="work">
-            <img src="images/gameUI.png" alt="" />
+            <img src="images/gameUI.webp" alt="game-UI" />
             <div class="layer">
               <h3>React Component Separation</h3>
               <p>
@@ -319,7 +356,7 @@
         <div class="memebrship-list">
           <div>
             <!-- <h2>CSSL</h2> -->
-            <img src="images/CSSL-Logo.png" alt="" />
+            <img src="images/CSSL-Logo.webp" alt="" />
             <p>
               Since 2016, I have been a member of The Computer Society of Sri
               Lanka.
@@ -337,11 +374,13 @@
           <div class="contact-left">
             <h2 class="sub-title">Follow Me</h2>
             <div class="social-icons">
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              <a href=""><i class="fa-brands fa-github"></i></a>
-              <a href=""><i class="fa-brands fa-medium"></i></a>
-              <a href=""><i class="fa-brands fa-stack-overflow"></i></a>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.linkedin.com/in/lakkaru" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/lakkaru" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="https://medium.com/@lakkaru" target="_blank"><i class="fa-brands fa-medium"></i></a>
+              <a href="https://www.w3profile.com/lakkaru" target="_blank"><i class="fa-solid fa-w"></i></a>
+              <a href="https://stackoverflow.com/users/8586758/lakkaru" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
+              <a href="https://www.udemy.com/user/lakshman-karunasena-2/" target="_blank"><i class="fa-sharp fa-solid fa-u"></i></a>
+              <a href="https://web.facebook.com/lakkaru/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             </div>
           </div>
           <!-- <div class="contact-right">
@@ -362,8 +401,8 @@
           <div class="contact-left">
             <h2 class="sub-title">Contact Me</h2>
             <p><i class="fa-solid fa-envelope"></i>lakkaru@gmail.com</p>
-            <p><i class="fa-solid fa-square-phone"></i>+94 - 0767531659</p>
-            <p><i class="fa-brands fa-square-whatsapp"></i>+94 - 0767531659</p>
+            <p><i class="fa-solid fa-square-phone"></i>+94 767531659</p>
+            <p><i class="fa-brands fa-square-whatsapp"></i>+94 767531659</p>
             <!-- <div class="social-icons">
               <a href=""><i class="fa-brands fa-linkedin"></i></a>
               <a href=""><i class="fa-brands fa-github"></i></a>
@@ -430,17 +469,18 @@
     <script>
       function seeMore() {
         var buttonText = document.getElementById("seeMore").innerHTML;
-        var secondDiv= document.getElementById('work-list-2');
+        var secondDiv = document.getElementById("work-list-2");
 
         if (buttonText == "See more") {
-         secondDiv.classList.add('show');
+          secondDiv.classList.add("show");
           document.getElementById("seeMore").innerHTML = "See less";
         } else {
-          secondDiv.classList.remove('show');
+          secondDiv.classList.remove("show");
           document.getElementById("seeMore").innerHTML = "See more";
         }
       }
     </script>
+    <!-- ---------- scripts for side menu --------- -->
     <script>
       var sidemenu = document.getElementById("sidemenu");
       function openmenu() {
